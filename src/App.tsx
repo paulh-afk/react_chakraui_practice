@@ -1,21 +1,19 @@
 import * as React from 'react';
-import { Box, Center, HStack, Circle } from '@chakra-ui/react';
-import { PhoneIcon } from '@chakra-ui/icons';
+import { Tab, TabList, TabPanel, TabPanels, Tabs } from '@chakra-ui/react';
 
 export const App = () => {
   return (
     <>
-      <Box bg={'tomato'} p={4} color={'white'}>
-        This is a Box
-      </Box>
-      <Center bg="blueviolet" h="100px" color="white">
-        This is the Center
-      </Center>
-      <HStack>
-        <Circle bg={'green.500'} p={4}>
-          <PhoneIcon color={'white'} />
-        </Circle>
-      </HStack>
+      <Tabs>
+        <TabList>
+          <Tab>1</Tab>
+          <Tab>2</Tab>
+        </TabList>
+        <TabPanels>
+          <TabPanel>One</TabPanel>
+          <TabPanel>Two</TabPanel>
+        </TabPanels>
+      </Tabs>
     </>
   );
 };
